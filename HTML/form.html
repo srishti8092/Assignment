@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Customer Survey Form</h2>
+        <form id="surveyForm">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" >
+
+            <label for="email">Email </label>
+            <input type="text" id="email" required><br>
+
+            <label>Is this first time You ae using products & service?</label><br>
+            <input type="radio" name="products" id="yes" value="Yes"> Yes
+            <input type="radio" name="products" id="no" value="No"> No <br>
+            
+            <label>Would you suggestion to your friends and colleague?</label><br>
+            <input type="radio" name="suggestion" id="yes" value="Yes"> Yes
+            <input type="radio" name="suggestion" id="no" value="No"> No <br>
+
+            <label>How satisfied are you with our company overall?</label><br>
+            <input type="radio" name="company" id="satisfied" value="satisfied">Satisfied
+            <input type="radio" name="company" id="undecided" value="undecided"> Undecided
+            <input type="radio" name="company" id="unsatisfied" value="unsatisfied"> Unsatisfied <br><br>
+
+            <label>Do you have suggestion to improve our service?</label><br>
+            <textarea name="message" rows="10" cols="80">
+                </textarea>
+
+            <div class="buttons">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3>Survey Results</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
